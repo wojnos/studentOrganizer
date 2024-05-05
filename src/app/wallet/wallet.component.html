@@ -1,0 +1,18 @@
+
+<div class="row wallet-container">
+  <div class="col-sm-4" *ngFor="let wallet of wallet$ | async">
+    <app-wallet-card [wallet]="wallet"></app-wallet-card>
+  </div>
+</div>
+<div class="col buttons-container">
+  <div class="row">
+    <button mat-raised-button color="primary" (click)="openHistoryModal()">Historia</button>
+  </div>
+  <div class="row resetWallet">
+    <button mat-raised-button color="accent" (click)="createNewWallet()">Dodaj pierwszy portel / resetuj portel</button>
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,22 @@
+
+<form [formGroup]="walletForm" xmlns="http://www.w3.org/1999/html">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="row">
+        <mat-form-field>
+          <input matInput formControlName="sum" placeholder="Kwota">
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field>
+          <input matInput formControlName="description" placeholder="Opis">
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field>
+          <input matInput formControlName="transactionDate" placeholder="Data transakcji">
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+</form>

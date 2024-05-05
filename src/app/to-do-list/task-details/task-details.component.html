@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col">
+    <h3>
+      Szczegóły zadania:
+      <mat-icon class="float-end" (click)="closeDetails()">close</mat-icon>
+    </h3>
+    <p class="label">  <strong> {{ task?.whatToDo }}  </strong> </p>
+    <p class="period"> Czas trwania: {{ task?.addedDate }} - {{ task?.deadLine }} </p>
+    <p class="label">Dodatkowe informacje: {{ task?.additionalInfo }} </p>
+  </div>
+  <button mat-raised-button color="primary" (click)="routeToEditTask()">Edytuj</button>
+</div>

@@ -1,0 +1,20 @@
+
+<div class="card-container float-md-end">
+    <div class="row">
+      <div class="col">
+        <p class="portfel">Masz w portfelu:  </p>
+        <p class="portfel"> <strong> {{ wallet?.sum }} </strong> zł </p>
+      </div>
+    </div>
+  </div>
+<h2 mat-dialog-title>Transakcje</h2>
+<mat-dialog-content>
+  <app-wallet-form #walletForm></app-wallet-form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <div class="row">
+    <div class="col">
+            <button mat-raised-button color="primary" [disabled]="walletForm.walletForm.invalid" (click)="newWalletValueADD()">Dodaj</button>
+    </div>
+  </div>
+</mat-dialog-actions>

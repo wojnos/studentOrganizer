@@ -1,0 +1,25 @@
+:host {
+  cursor: pointer;
+}
+
+.card-container {
+  padding: 20px;
+  position: center;
+}
+
+.card-content {
+  padding-left: 30px;
+  padding-right: 20px;
+  background: lightsteelblue;
+}
+
+.whatToDo {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.icon-container {
+  display: flex;
+  border-end-end-radius: 60%;
+  background: lightsteelblue;
+}

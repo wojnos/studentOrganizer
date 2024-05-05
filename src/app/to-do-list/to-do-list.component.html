@@ -1,0 +1,6 @@
+<div class="row tasks-container">
+  <div class="col-sm-4" *ngFor="let task of tasks$ | async" (click)="openTaskDetailModal(task)">
+    <app-task-card [task]="task"></app-task-card>
+  </div>
+</div>
+<button (click)="openNewTaskModal()" mat-fab color="primary" id="add-new-task">+</button>

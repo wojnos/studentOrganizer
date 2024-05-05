@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>Stworz nowe zadanie</h2>
+<mat-dialog-content>
+  <app-task-form #taskForm></app-task-form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <div class="row">
+    <div class="col">
+      <button mat-raised-button mat-dialog-close="close">Anuluj</button>
+      <button mat-raised-button color="primary" [disabled]="taskForm.form.invalid" (click)="createTask()">Utwórz</button>
+    </div>
+  </div>
+</mat-dialog-actions>

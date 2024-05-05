@@ -1,0 +1,14 @@
+
+<mat-dialog-actions>
+  <div class="container">
+    <button mat-raised-button color="warn" mat-dialog-close="close">Zamknij</button>
+  </div>
+</mat-dialog-actions>
+
+<mat-dialog-content>
+<div class="row walletHistory-container">
+  <div class="col-sm-4" *ngFor="let walletHistory of walletHistory$ | async">
+    <app-wallet-history-card [walletHistory]="walletHistory"></app-wallet-history-card>
+  </div>
+</div>
+</mat-dialog-content>

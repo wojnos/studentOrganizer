@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <div class="container buttonsOption">
+    <mat-icon class="studentIcon">school</mat-icon>
+    <button mat-button routerLink="./to-do-list">Zadania</button>
+    <button mat-button routerLink="./wallet">Portfel</button>
+    <span class="material-icons float-end" (click)="logout()">logout</span>
+  </div>
+</mat-toolbar>
+<div class="containter">
+  <router-outlet></router-outlet>
+</div>

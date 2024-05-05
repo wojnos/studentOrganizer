@@ -1,0 +1,12 @@
+.card-container {
+  border-right: solid 3px black;
+  border-bottom: solid 3px black;
+  border-left: solid 3px black;
+  border-top: solid 3px black;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icon-container {
+  background-color: lightsteelblue;
+}

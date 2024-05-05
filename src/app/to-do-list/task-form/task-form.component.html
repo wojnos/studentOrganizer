@@ -1,0 +1,27 @@
+<form [formGroup]="form" xmlns="http://www.w3.org/1999/html">
+<div class="row">
+  <div class="col-sm-4">
+    <div class="row">
+      <mat-form-field>
+        <input matInput formControlName="whatToDo" placeholder="Co jest do zrobienia">
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field>
+        <input matInput formControlName="addedDate" placeholder="Data rozpoczęcia">
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field>
+        <input matInput formControlName="deadLine" placeholder="Data zakończenia">
+      </mat-form-field>
+    </div>
+  <div class="col-sm-8">
+    <mat-form-field>
+      <textarea matInput formControlName="additionalInfo" placeholder="Dodatkowe informacje"></textarea>
+    </mat-form-field>
+  </div>
+</div>
+</div>
+</form>
+

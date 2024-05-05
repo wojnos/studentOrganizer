@@ -1,0 +1,18 @@
+<div class="row justify-content-center login-container">
+  <div class="col-sm-4 shadow login-content">
+    <h3>Login</h3>
+    <mat-form-field class="d-block">
+      <input matInput placeholder="Email" [(ngModel)]="credentials.email" required>
+      <mat-error>Login - email jest wymagany</mat-error>
+    </mat-form-field>
+    <mat-form-field class="d-block">
+      <input matInput type="password" placeholder="Hasło" [(ngModel)]="credentials.password" required>
+      <mat-error>Haslo jest wymagane</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary" class="float-start" (click)="login()">Zaloguj</button>
+    <div class="col-sm-4 float-end">
+      <p> Nie masz konta?</p>
+      <button mat-raised-button  color="accent"(click)="register()">Zarejestruj się</button>
+    </div>
+  </div>
+</div>

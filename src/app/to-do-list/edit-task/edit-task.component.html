@@ -1,0 +1,16 @@
+
+<div class="container editTask">
+  <div class="row">
+    <div class="col-9">
+      <h3>Edycja zadania:  <strong> {{ task?.whatToDo }}</strong></h3>
+    </div>
+  </div>
+  <app-task-form #taskForm></app-task-form>
+  <div class="row">
+    <div class="col">
+      <button mat-raised-button (click)="backToToDoList()"> Anuluj </button>
+      <button mat-raised-button color="primary" [disabled]="taskForm.form.invalid" (click)="editTask()"> Zapisz </button>
+      <button mat-raised-button color="warn" (click)="removeTask()"> Usuń </button>
+    </div>
+  </div>
+</div>
